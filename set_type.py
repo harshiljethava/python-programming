@@ -1,0 +1,36 @@
+set1={"one",2,3.0,("four",5)}
+print("sample set :",set1)
+print("len(set1):",len(set1))
+print("Moral: set is unordered collections of hashable object. so when you print 'set1' every time order of elements are different.")
+set2={"hello",1,3.4,("hey",70),66,60.0}
+print(set2)
+set3={}
+print("Type of set2:",type(set2))
+print(set3)
+print("Type of set3:",type(set3))
+set4={1,1,1,"333","test"}
+print("""\nActualset4={1,1,1,"333","test"}""")
+print("set4:",set4)
+print("Moral:set does not support duplicate data.")
+print("set4.add('new'):",set4.add("new"))
+print("new set4:",set4)
+print("using clear() with set4():")
+set4.clear()
+print(set4)
+print("using difference() with set2 and set3 :")
+set4={"hello",1,3.4,("hey",70)}
+print("set2:",set2)
+print("set4:",set4)
+print("set2.difference(set4):",set2-set4)
+print("After set4.discard(1):",set4.discard(1))
+print("new set4:",set4)
+print("After using remove() with set2")
+set2.remove(3.4)
+print(set2)
+print("intersection() with set2 and set4")
+print(set2.intersection(set4))
+print("set2 and set4 have no any item common:",set2.isdisjoint(set4))
+print(set2);
+print(set4)
+print("set4 is subset of set2:",set4.issubset(set2))
+print("set4.symmetric_difference(set2): ",set4.symmetric_difference(set2))

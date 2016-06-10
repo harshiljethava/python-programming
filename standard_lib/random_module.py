@@ -1,0 +1,12 @@
+import random,statistics
+print(random)
+print(help(statistics))
+#print(help(random))
+print(random.randrange(1000000))
+ra=random.choice(['apple','banana','greps'])
+print(ra)
+data=(2,4,5,3,5,7)
+print(data)
+print(statistics.mean(data))
+print(statistics.median_high(data))
+print(statistics.median(data))
